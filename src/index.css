@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Just+Me+Again+Down+Here&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;600;700&family=Just+Me+Again+Down+Here&display=swap");
+@import "./assets/fonts/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 bg-page font-sans text-black antialiased;
+  }
+
+  * {
+    @apply box-border;
+  }
+}
+
+:root {
+  --color-page: #fafbfe;
+  --color-text: #1a1a1a;
+}
+
+html.dark {
+  --color-page: #0f0f14;
+  --color-text: #ffffff;
+}
+
+html.dark body {
+  @apply bg-pageDark;
+}
